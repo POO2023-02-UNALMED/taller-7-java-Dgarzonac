@@ -27,15 +27,14 @@ public class Tesis extends Escrito{
 	public String toString(){
 	    return getOrigen() + "\n" + getTitulo()  + "\n" + getAutor() + "\n" + getPaginas() + "\n" + getArgumentos() + "\n" + getConclusion() + "\n" + getReferencias();
 	}
-	
 	public String getIdea() {
 		return idea;
 	}
 	public void setIdea(String idea) {
 		this.idea = idea;
 	}
-	public static String[] getArgumentos() {
-		return argumentos;
+	public  int getArgumentos() {
+		return argumentos.length;
 	}
 	public static void setArgumentos(String[] argumentos) {
 		Tesis.argumentos = argumentos;
@@ -58,7 +57,5 @@ public class Tesis extends Escrito{
 	public void setInterpretacion(String interpretacion) {
 		this.interpretacion = interpretacion;
 	}
-	
-
 
 }
