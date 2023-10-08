@@ -2,8 +2,8 @@ package comunicacion;
 
 public class Alfabeto extends Pictograma{
 	
-	String[] letras;
-	String interpretacion;
+	private String[] letras;
+	private String interpretacion;
 	
 	public Alfabeto(String origen, String[] letras, String interpretacion){
 		super(origen);
@@ -12,8 +12,8 @@ public class Alfabeto extends Pictograma{
 	
 	public String toString(){
 		String cadena = "";
-		for(String letra : letras){
-			cadena += (String) letra + (String) ", "; 
+		for(int i =0;i<(letras.length-1);i++){
+			cadena += (String) letras[i] + (String) ", "; 
 		}
 		return cadena;
 		}
@@ -21,15 +21,23 @@ public class Alfabeto extends Pictograma{
 	public int cantidadLetras(){
 		return letras.length;
 	}
+	
 	public String interpretacion(){
-		return null;
+		return interpretacion;
 		}
-
+	
 	public String[] getLetras() {
 		return letras;
 	}
-
-	public  void setLetras(String[] letras) {
+	public void setLetras(String[] letras) {
 		this.letras = letras;
 	}
+	public String getInterpretacion() {
+		return interpretacion;
+	}
+	public void setInterpretacion(String interpretacion) {
+		this.interpretacion = interpretacion;
+	}
+	
+
 }
