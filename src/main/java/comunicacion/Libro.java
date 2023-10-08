@@ -21,7 +21,7 @@ public class Libro extends Escrito{
 	}
 	
 	public String toString(){
-	    return getOrigen() + "\n" + getTitulo()  + "\n" + getAutor() + "\n" + getPaginas() + "\n" + getCo_autor() + "\n" + getEditorial() + "\n" + getEdicion() + "\n" + getInterpretacion();
+	    return getOrigen() + "\n" + getTitulo()  + "\n" + getAutor() + "\n" + getPaginas() + "\n" + getCo_autor() + "\n" + getEditorial() + "\n" + getEdicion();
 	}
 
 	

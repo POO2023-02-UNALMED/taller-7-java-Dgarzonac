@@ -25,7 +25,7 @@ public class Tesis extends Escrito{
 	}
 	
 	public String toString(){
-	    return getOrigen() + "\n" + getTitulo()  + "\n" + getAutor() + "\n" + getPaginas() + "\n" + getArgumentos() + "\n" + getConclusion() + "\n" + getReferencias() + "\n" + getInterpretacion();
+	    return getOrigen() + "\n" + getTitulo()  + "\n" + getAutor() + "\n" + getPaginas() + "\n" + getArgumentos() + "\n" + getConclusion() + "\n" + getReferencias();
 	}
 	
 	public String getIdea() {

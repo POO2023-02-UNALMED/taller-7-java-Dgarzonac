@@ -14,11 +14,11 @@ public class Fabula extends Escrito{
 	}
 	
 	public String toString(){
-	    return getOrigen() + "\n" + getTitulo()  + "\n" + getAutor() + "\n" + getPaginas() + "\n" + getEnsenanza() + "\n" + getInterpretacion();
+	    return getOrigen() + "\n" + getTitulo()  + "\n" + getAutor() + "\n" + getPaginas() + "\n" + getEnsenanza() ;
 	}
 	
 	public String getEnsenanza() {
-		return ensenanza;
+		return this.ensenanza;
 	}
 	
 	public void setEnsenanza(String ensenanza) {
@@ -26,15 +26,15 @@ public class Fabula extends Escrito{
 	}
 	
 	public String interpretacion() {
-		return interpretacion;
+		return this.interpretacion;
 	}
 	
 	public String getInterpretacion() {
-		return interpretacion;
+		return this.interpretacion;
 	}
 	
 	public void setInterpretacion(String interpretacion) {
 		this.interpretacion = interpretacion;
 	}
-
 }
+

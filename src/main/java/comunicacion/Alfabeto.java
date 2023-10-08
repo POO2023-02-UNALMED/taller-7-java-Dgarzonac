@@ -8,12 +8,16 @@ public class Alfabeto extends Pictograma{
 	public Alfabeto(String origen, String[] letras, String interpretacion){
 		super(origen);
 		this.letras = letras;
-	}
+		this.interpretacion = interpretacion;
+		}
 	
 	public String toString(){
 		String cadena = "";
-		for(int i =0;i<(letras.length-1);i++){
-			cadena += (String) letras[i] + (String) ", "; 
+		for(int i =0;i<(letras.length);i++){
+			cadena += letras[i];
+			if(i<(letras.length-1)){
+			cadena += ", ";
+			}
 		}
 		return cadena;
 		}
@@ -38,6 +42,4 @@ public class Alfabeto extends Pictograma{
 	public void setInterpretacion(String interpretacion) {
 		this.interpretacion = interpretacion;
 	}
-	
-
 }
