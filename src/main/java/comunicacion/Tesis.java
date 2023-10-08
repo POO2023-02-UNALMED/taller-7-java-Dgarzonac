@@ -25,7 +25,7 @@ public class Tesis extends Escrito{
 	}
 	
 	public String toString(){
-	    return getOrigen() + "\n" + getTitulo()  + "\n" + getAutor() + "\n" + getPaginas() + "\n" + getArgumentos().length + "\n" + getConclusion() + "\n" + getReferencias();
+	    return getOrigen() + "\n" + getTitulo()  + "\n" + getAutor() + "\n" + getPaginas() + "\n" + getIdea() + "\n" + getArgumentos().length + "\n" + getConclusion() + "\n" + getReferencias();
 	}
 	public String getIdea() {
 		return idea;
@@ -56,6 +56,13 @@ public class Tesis extends Escrito{
 	}
 	public void setInterpretacion(String interpretacion) {
 		this.interpretacion = interpretacion;
+	}
+	
+	public class PruebaTesis {
+	    public static void main(String[] args) {
+	    	Tesis tesis = new Tesis("Pensamiento expansivo", "Recomendador", "Alejandro", 20, "Recomendar asignaturas", new String [] {"Primero", "Segundo"},"Se hace trabajo futuro", "[1] Maquinaria",  "Escrito investigativo");
+	        System.out.println(tesis.toString());
+	    }
 	}
 
 }
