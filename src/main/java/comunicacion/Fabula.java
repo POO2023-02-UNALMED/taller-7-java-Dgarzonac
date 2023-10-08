@@ -3,7 +3,7 @@ package comunicacion;
 public class Fabula extends Escrito{
 	private String ensenanza;
 	private String interpretacion;
-	public Fabula(String origen, String titulo, String autor, int paginas, String ensenanza, String intrpretacion, String interpretacion){
+	public Fabula(String origen, String titulo, String autor, int paginas, String ensenanza, String interpretacion){
 		super(origen, titulo, autor, paginas);
 		this.ensenanza = ensenanza;
 		this.interpretacion = interpretacion;
@@ -14,7 +14,7 @@ public class Fabula extends Escrito{
 	}
 	
 	public String toString(){
-		return null;
+	    return getOrigen() + "\n" + getTitulo()  + "\n" + getAutor() + "\n" + getPaginas() + "\n" + getEnsenanza() + "\n" + getInterpretacion();
 	}
 	
 	public String getEnsenanza() {

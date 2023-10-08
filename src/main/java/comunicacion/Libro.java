@@ -21,8 +21,9 @@ public class Libro extends Escrito{
 	}
 	
 	public String toString(){
-		return null;
+	    return getOrigen() + "\n" + getTitulo()  + "\n" + getAutor() + "\n" + getPaginas() + "\n" + getCo_autor() + "\n" + getEditorial() + "\n" + getEdicion() + "\n" + getInterpretacion();
 	}
+
 	
 	public String interpretacion() {
 		return interpretacion;
@@ -52,7 +53,9 @@ public class Libro extends Escrito{
 	public void setEdicion(String edicion) {
 		this.edicion = edicion;
 	}
-
+	public String getInterpretacion() {
+		return interpretacion;
+	}
 	public void setInterpretacion(String interpretacion) {
 		this.interpretacion = interpretacion;
 	}

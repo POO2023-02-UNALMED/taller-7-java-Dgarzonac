@@ -17,7 +17,12 @@ public class Periodico extends Escrito{
 	}
 	
 	public String toString(){
-		return null;
+	    return getOrigen() + "\n" + getTitulo()  + "\n" + getAutor() + "\n" + getPaginas() + "\n" + getFecha() + "\n" + getPrimicia() + "\n" + getInterpretacion();
+	}
+
+	
+	public String getInterpretacion() {
+		return interpretacion;
 	}
 	
 	public String interpretacion() {
@@ -39,5 +44,7 @@ public class Periodico extends Escrito{
 	public void setPrimicia(String primicia) {
 		this.primicia = primicia;
 	}
+	
+	
 	
 }

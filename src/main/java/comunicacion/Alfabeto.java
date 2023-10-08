@@ -5,8 +5,8 @@ public class Alfabeto extends Pictograma{
 	String[] letras;
 	String interpretacion;
 	
-	public Alfabeto(String interpretacion, String[] letras){
-		super(interpretacion);
+	public Alfabeto(String origen, String[] letras, String interpretacion){
+		super(origen);
 		this.letras = letras;
 	}
 	
