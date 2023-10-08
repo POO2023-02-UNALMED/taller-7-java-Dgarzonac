@@ -57,12 +57,5 @@ public class Tesis extends Escrito{
 	public void setInterpretacion(String interpretacion) {
 		this.interpretacion = interpretacion;
 	}
-	
-	public class PruebaTesis {
-	    public static void main(String[] args) {
-	    	Tesis tesis = new Tesis("Pensamiento expansivo", "Recomendador", "Alejandro", 20, "Recomendar asignaturas", new String [] {"Primero", "Segundo"},"Se hace trabajo futuro", "[1] Maquinaria",  "Escrito investigativo");
-	        System.out.println(tesis.toString());
-	    }
-	}
 
 }
